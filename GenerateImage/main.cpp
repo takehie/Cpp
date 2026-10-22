@@ -10,6 +10,7 @@
 #include <cstdlib> // コマンドを実行
 #include <iomanip>
 #include <cstdio>
+#include <sstream>
 
 #include "files.h"
 #include "timer.h"
@@ -105,9 +106,12 @@ int main() {
 	const std::string baseName = "20260118_image";
 	int frame = 1;
 
+	// パス名
+	std::string pathName;
+
 	// ファイル名作成
-        std::string ppmName = makeNumberedName(baseName, frame, ".ppm");
-        std::string pngName = makeNumberedName(baseName, frame, ".png");
+    std::string ppmName = makeNumberedName(baseName, frame, ".ppm");
+    std::string pngName = makeNumberedName(baseName, frame, ".png");
 
 	for (int y = 0; y < HEIGHT; ++y) {
 		for (int x = 0; x < WIDTH; ++x) {
