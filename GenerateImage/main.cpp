@@ -1,4 +1,4 @@
-// g++ main.cpp files.cpp timer.cpp
+// g++ main.cpp commands.cpp timer.cpp
 // ./a
 
 // ヘッダの読み込み.
@@ -12,7 +12,7 @@
 #include <cstdio>
 #include <sstream>
 
-#include "files.h"
+#include "commands.h"
 #include "timer.h"
 #include "color.h"
 
@@ -91,19 +91,19 @@ int main() {
 	Timer timer;
 
 // FullHD解像度
-	const int WIDTH  = 1920;  // 横
-	const int HEIGHT = 1080;  // 縦
+	const int WIDTH  = 4000;  // 横
+	const int HEIGHT = 2000;  // 縦
 
 // 球の情報
 	int centerX = WIDTH / 2;
 	int centerY = HEIGHT / 2;
 	int radius = 200;
 
-        ImagePPM image(WIDTH, HEIGHT);
+    ImagePPM image(WIDTH, HEIGHT);
 
 // フレーム設定
 	const int totalFrames = 1;
-	const std::string baseName = "20260118_image";
+	const std::string baseName = "20261025_image";
 	int frame = 1;
 
 	// パス名
