@@ -4,6 +4,6 @@
 class ImageProperty {
     public:
         long width, height;
-}
+};
 
 #endif
